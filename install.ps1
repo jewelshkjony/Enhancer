@@ -3,9 +3,9 @@ $url = "https://github.com/jewelshkjony/Enhancer/releases/download/1.0.0/Enhance
 
 # Define the destination path dynamically using the current user's profile path
 $destination = "$env:LOCALAPPDATA\Enhancer\Enhancer.exe"
+$destinationDir = Split-Path -Path $destination
 
 # Create the directory if it doesn't exist
-$destinationDir = Split-Path -Path $destination
 if (-not (Test-Path -Path $destinationDir)) {
     New-Item -ItemType Directory -Path $destinationDir -Force
 }
