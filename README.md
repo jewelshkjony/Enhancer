@@ -1,5 +1,7 @@
 # 🔦 Enhancer
-> A powerful tool inject assets, native (.so) libraries and sign the apk.
+A powerful tool inject assets, native (.so) libraries and sign the apk.
+
+![image](https://github.com/jewelshkjony/Enhancer/assets/75406851/ad7914b1-bb26-4d9f-81f5-4594d0d34374)
 
 ## 🪶 Features
 * Change `compileSdkVersion`/`targetSdkVersion`
