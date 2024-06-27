@@ -13,11 +13,11 @@ if (-not (Test-Path -Path $destinationDir)) {
 # Download the file
 Invoke-WebRequest -Uri $url -OutFile $destination
 
-# Add the destination directory to the environment PATH variable if not already present
-$currentPath = [System.Environment]::GetEnvironmentVariable("Path", [System.EnvironmentVariableTarget]::User)
+# Add the destination directory to the system PATH variable if not already present
+$currentPath = [System.Environment]::GetEnvironmentVariable("Path", [System.EnvironmentVariableTarget]::Machine)
 if (-not $currentPath.Split(';') -contains $destinationDir) {
     $newPath = $currentPath + ";" + $destinationDir
-    [System.Environment]::SetEnvironmentVariable("Path", $newPath, [System.EnvironmentVariableTarget]::User)
+    [System.Environment]::SetEnvironmentVariable("Path", $newPath, [System.EnvironmentVariableTarget]::Machine)
 }
 
-Write-Output "Enhancer has been successfully installed."
+Write-Output "Enhancer has been successfully installed and the path has been set."
