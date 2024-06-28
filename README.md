@@ -18,6 +18,15 @@ In PowerShell, run:
 iwr https://raw.githubusercontent.com/jewelshkjony/Enhancer/main/install.ps1 -useb | iex
 ```
 
+### Linux and macOS
+1. In the terminal, run:
+
+    ```sh
+    curl https://raw.githubusercontent.com/jewelshkjony/Enhancer/main/install.sh -fsSL | sh
+    ```
+
+2. To run Enhancer write `chmod +x Enhancer.sh` on terminal.
+
 ## Quick start
 Now, that you've installed Enhancer, let's try this tool.
 
