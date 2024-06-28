@@ -7,6 +7,11 @@ $zipUrl = [System.Text.Encoding]::UTF8.GetString($zipBytes)
 $zipLocation = "$env:LOCALAPPDATA\Enhancer\Enhancer.zip"
 $destinationDir = "$env:LOCALAPPDATA\Enhancer"
 
+# Delete the destination directory if it already exists
+if (Test-Path -Path $destinationDir) {
+    Remove-Item -Path $destinationDir -Recurse -Force
+}
+
 # Create the directory if it doesn't exist
 if (-not (Test-Path -Path $destinationDir)) {
     New-Item -ItemType Directory -Path $destinationDir -Force
