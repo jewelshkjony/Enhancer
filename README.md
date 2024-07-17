@@ -47,3 +47,18 @@ This will show you some prompts.
 3. If you only want to sign the apk and don't want to inject anything so write `N` on every prompts. So the tool will skip the injecting process. When you're only signing the apk so the output apk will override the origianl apk. And if you're injecting assets or native (.so) libraries so the tool will provide a new apk (originalApk-enhanced.apk).
 
 4. That's it, now you can install the generated apk.
+
+## Uninstallation
+> **Note**: Not recommended. Try to delete files from `Local` and remove path manually from Environment.
+
+### Windows
+In PowerShell, run:
+```ps1
+iwr https://raw.githubusercontent.com/jewelshkjony/Enhancer/2.0.0/uninstall.ps1 -useb | iex
+```
+
+### Linux and macOS
+In terminal, run:
+```ps1
+curl https://raw.githubusercontent.com/jewelshkjony/Enhancer/2.0.0/uninstall.sh -fsSL | sh
+```
