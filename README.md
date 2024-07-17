@@ -15,14 +15,14 @@ A powerful tool to change target api level, inject assets, native (.so) librarie
 ### Windows
 In PowerShell, run:
 ```ps1
-iwr https://raw.githubusercontent.com/jewelshkjony/Enhancer/main/install.ps1 -useb | iex
+iwr https://raw.githubusercontent.com/jewelshkjony/Enhancer/1.0.0/install.ps1 -useb | iex
 ```
 
 ### Linux and macOS
 1. In the terminal, run:
 
     ```sh
-    curl https://raw.githubusercontent.com/jewelshkjony/Enhancer/main/install.sh -fsSL | sh
+    curl https://raw.githubusercontent.com/jewelshkjony/Enhancer/1.0.0/install.sh -fsSL | sh
     ```
 
 2. To run Enhancer write `chmod +x Enhancer.sh` on terminal.
