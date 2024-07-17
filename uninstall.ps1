@@ -17,4 +17,4 @@ if ($Path -like "*$destinationDir*") {
     $Env:Path = $NewPath
 }
 
-Write-Output "Enhancer-2.0.0 has been successfully uninstalled."
+Write-Output "Enhancer has been successfully uninstalled."
