@@ -7,6 +7,9 @@ A powerful tool to inject assets, dex, manifest, resources & native (.so) librar
 * Change `compileSdkVersion`/`targetSdkVersion`
 * Inject assets files
 * Inject native (.so) libraries
+* Inject dex files
+* Inject extra resources
+* Inject manifest.xml file.
 * Sign the apk using your keystore file
 
 ## Installation
@@ -37,7 +40,10 @@ This will show you some prompts.
     - `Want to change SDK version? Y/N`: Write `Y` if you want to change `compileSdkVersion`/`targetSdkVersion`. If you've entered `Y` then it'll ask for enter `compileSdkVersion` & `compileSdkVersionCodeName`.
     - `Want to inject assets? Y/N` : If you want to inject assets file so write `Y` now it'll ask for the directory path of asstes files.
     - `Want to inject native libraries? Y/N` : If you want to inject (.so) native libraries so write `Y` now it'll ask for the directory path of native libraries.
+    - `Want to inject dex files? Y/N` : If you want to inject .dex files so write `Y` now it'll ask for the path of dex file. If you want to inject multiple files, separate the paths with commas.
+    - `Want to inject extra resources? Y/N` : If you want to inject any additional resources so write `Y` now it'll ask for resources directory path. It'll follow the name of directory to inject. If you want to inject multiple directory, separate the directory paths with commas.
+    - `Want to inject manifest.xml? Y/N` : If you want to inject AndroidManifest.xml write `Y` and set the path of Manifest.xml.
 
-3. If you only want to sign the apk and don't want to inject assets, native (.so) libraries so write `N` on every prompts. So the tool will skip the injecting process. When you're only signing the apk so the output apk will override the origianl apk. And if you're injecting assets or native (.so) libraries so the tool will provide a new apk (originalApk-enhanced.apk).
+3. If you only want to sign the apk and don't want to inject anything so write `N` on every prompts. So the tool will skip the injecting process. When you're only signing the apk so the output apk will override the origianl apk. And if you're injecting assets or native (.so) libraries so the tool will provide a new apk (originalApk-enhanced.apk).
 
 4. That's it, now you can install the generated apk.
