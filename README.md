@@ -18,14 +18,14 @@ A powerful tool to inject assets, dex, manifest, resources & native (.so) librar
 ### Windows
 In PowerShell, run:
 ```ps1
-iwr https://raw.githubusercontent.com/jewelshkjony/Enhancer/main/install2.ps1 -useb | iex
+iwr https://raw.githubusercontent.com/jewelshkjony/Enhancer/2.0.0/install.ps1 -useb | iex
 ```
 
 ### Linux and macOS
 1. In the terminal, run:
 
     ```sh
-    curl https://raw.githubusercontent.com/jewelshkjony/Enhancer/main/install2.sh -fsSL | sh
+    curl https://raw.githubusercontent.com/jewelshkjony/Enhancer/2.0.0/install.sh -fsSL | sh
     ```
 
 2. To run Enhancer write `chmod +x Enhancer.sh` on terminal.
