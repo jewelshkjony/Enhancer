@@ -1,7 +1,7 @@
 # 🔦 Enhancer
-A powerful tool to inject assets, native (.so) libraries and sign the apk.
+A powerful tool to inject assets, dex, manifest, resources & native (.so) libraries and sign the apk.
 
-![image](https://github.com/jewelshkjony/Enhancer/assets/75406851/ad7914b1-bb26-4d9f-81f5-4594d0d34374)
+![Screenshot 2024-07-17 164036](https://github.com/user-attachments/assets/388e7ec6-38f3-456b-a31e-89e0d2f0b0f4)
 
 ## 🪶 Features
 * Change `compileSdkVersion`/`targetSdkVersion`
@@ -15,14 +15,14 @@ A powerful tool to inject assets, native (.so) libraries and sign the apk.
 ### Windows
 In PowerShell, run:
 ```ps1
-iwr https://raw.githubusercontent.com/jewelshkjony/Enhancer/main/install.ps1 -useb | iex
+iwr https://raw.githubusercontent.com/jewelshkjony/Enhancer/main/install2.ps1 -useb | iex
 ```
 
 ### Linux and macOS
 1. In the terminal, run:
 
     ```sh
-    curl https://raw.githubusercontent.com/jewelshkjony/Enhancer/main/install.sh -fsSL | sh
+    curl https://raw.githubusercontent.com/jewelshkjony/Enhancer/main/install2.sh -fsSL | sh
     ```
 
 2. To run Enhancer write `chmod +x Enhancer.sh` on terminal.
