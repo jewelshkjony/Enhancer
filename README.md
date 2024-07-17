@@ -43,7 +43,7 @@ This will show you some prompts.
 4. That's it, now you can install the generated apk.
 
 ## Uninstallation
-> **Note**: Not recommended. Try to delete files from `AppData/Local` and remove path manually from Environment.
+> **Note**: Not recommended. Try to delete files from `Local` and remove path manually from Environment.
 
 ### Windows
 In PowerShell, run:
