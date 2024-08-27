@@ -44,9 +44,9 @@ This will show you some prompts.
     - `Want to inject extra resources? Y/N` : If you want to inject any additional resources so write `Y` now it'll ask for resources directory path. It'll follow the name of directory to inject. If you want to inject multiple directory, separate the directory paths with commas.
     - `Want to inject manifest.xml? Y/N` : If you want to inject AndroidManifest.xml write `Y` and set the path of Manifest.xml.
 
-3. If you only want to sign the apk and don't want to inject anything so write `N` on every prompts. So the tool will skip the injecting process. When you're only signing the apk so the output apk will override the origianl apk. And if you're injecting assets or native (.so) libraries so the tool will provide a new apk (originalApk-enhanced.apk).
+2. If you only want to sign the apk and don't want to inject anything so write `N` on every prompts. So the tool will skip the injecting process. When you're only signing the apk so the output apk will override the origianl apk. And if you're injecting assets or native (.so) libraries so the tool will provide a new apk (originalApk-enhanced.apk).
 
-4. That's it, now you can install the generated apk.
+3. That's it, now you can install the generated apk.
 
 ## Uninstallation
 > **Note**: Not recommended. Try to delete files from `Local` and remove path manually from Environment.
